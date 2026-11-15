@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sacola · Doceria</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">
+        <img src="Logo.png" alt="">
+      </span>
+      <span>Doceria do Exu</span>
+    </a>
+
+    <nav class="header-nav">
+      <div class="darkMode">
+        <p>Modo Escuro</p>
+        <label class="btnDark">
+          <input type="checkbox" id="btnDark">
+          <div class="bolinha"></div>
+        </label>
+      </div>
+      <a href="doces.html">Doces</a>
+      <a href="entrar.html">Entrar</a>
+      <a class="Sair">Sair</a>
+      <a class="bag-button" href="sacola.html">
+        <div class="img"></div>
+        Sacola · 0
+      </a>
+    </nav>
+  </header>
+
+  <div class="benefits">
+    <span>DOCE DE VERDADE</span>
+    <b>✦</b>
+    <span>OS QUERIDINHOS DO BAIRRO</span>
+    <b>✦</b>
+    <span>DA DOCERIA À SUA PORTA</span>
+    <b>✦</b>
+    <span>BORA ADOÇAR O DIA?</span>
+  </div>
+
+  <main class="container">
+    <div class="introducao">
+      <div>
+        <p class="etiqueta">QUASE LÁ</p>
+        <h1>Sua sacola</h1>
+        <p class="descricao">
+          Confira os doces, escolha como pagar e finalize seu pedido.
+        </p>
+      </div>
+      <a href="/" class="voltar">Continuar comprando</a>
+    </div>
+
+    <div class="layout">
+      <div class="coluna">
+        <section class="painel" aria-labelledby="titulo-pedido">
+          <div class="painel-topo">
+            <h2 id="titulo-pedido">Seu pedido</h2>
+            <span class="muted">3 itens</span>
+          </div>
+
+          <article class="item">
+            <div class="miniatura" aria-hidden="true"><img src="bolo com nozes.png" alt=""></div>
+            <div>
+              <h3>Bolo de chocolate</h3>
+              <p class="muted">Fatia generosa · cobertura e nozes</p>
+              <button class="remover" type="button"
+                aria-label="Remover bolo de chocolate">Remover</button>
+            </div>
+            <div class="item-acoes">
+              <strong>R$ 12,90</strong>
+              <div class="quantidade">
+                <button type="button" aria-label="Diminuir bolo de chocolate">−</button>
+                <span>1</span>
+                <button type="button" aria-label="Aumentar bolo de chocolate">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="miniatura" aria-hidden="true"><img src="pudim2.png" alt=""></div>
+            <div>
+              <h3>Pudim de leite</h3>
+              <p class="muted">Cremoso · calda caramelada · serve 1</p>
+              <button class="remover" type="button"
+                aria-label="Remover pudim de leite">Remover</button>
+            </div>
+            <div class="item-acoes">
+              <strong>R$ 19,80</strong>
+              <div class="quantidade">
+                <button type="button" aria-label="Diminuir pudim de leite">−</button>
+                <span>2</span>
+                <button type="button" aria-label="Aumentar pudim de leite">+</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="painel" aria-labelledby="titulo-entrega">
+          <p class="etiqueta1">ENTREGA</p>
+          <h2 id="titulo-entrega">Onde vamos entregar?</h2>
+
+          <address class="endereco">
+            <div>
+              <strong>Rua dos Burros, 067</strong>
+              <p class="muted">Centro · Exu, PE · 56230-000</p>
+            </div>
+            <button class="alterar" type="button">Alterar endereço</button>
+          </address>
+
+          <label class="rotulo" for="observacao">
+            Algum recado para a doceria?
+          </label>
+          <textarea id="observacao" name="observacao" maxlength="140"
+            placeholder="Ex.: sem talheres, deixar na portaria..."></textarea>
+          <p class="muted">Até 140 caracteres.</p>
+        </section>
+
+        <section class="painel1">
+          <p class="etiqueta1">PAGAMENTO</p>
+          <fieldset>
+            <legend>Como quer pagar?</legend>
+            <div class="pagamentos">
+              <label class="opcao">
+                <input type="radio" name="pagamento" value="pix" checked>
+                <span>
+                  <strong>Pix</strong>
+                  <small class="muted">Aprovação na hora</small>
+                </span>
+              </label>
+
+              <label class="opcao">
+                <input type="radio" name="pagamento" value="cartao">
+                <span>
+                  <strong>Cartão na entrega</strong>
+                  <small class="muted">Crédito ou débito</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+        </section>
+      </div>
+
+      <aside class="resumo" aria-labelledby="titulo-resumo">
+        <p class="etiqueta">RESUMO</p>
+        <h2 id="titulo-resumo">Fechar o pedido</h2>
+
+        <label class="rotulo" for="cupom">Tem um cupom?</label>
+        <div class="cupom">
+          <input id="cupom" name="cupom" placeholder="Digite o código">
+          <button type="button">Aplicar</button>
+        </div>
+
+        <dl>
+          <div>
+            <dt>Subtotal</dt>
+            <dd>R$ 32,70</dd>
+          </div>
+          <div>
+            <dt>Taxa de entrega</dt>
+            <dd>R$ 4,90</dd>
+          </div>
+        </dl>
+
+        <div class="total">
+          <div>
+            <span>Total</span>
+            <small>Taxas incluídas</small>
+          </div>
+          <strong>R$ 37,60</strong>
+        </div>
+
+        <button class="finalizar" type="button">
+          Finalizar pedido →
+        </button>
+
+        <p class="aviso">
+          Ao finalizar, você confirma o endereço e a forma de
+          pagamento escolhida.
+        </p>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <span class="brand-logo">
+            <img src="Logo.png" alt="">
+          </span>
+          <span>Doceria do Exu</span>
+        </a>
+
+        <p>
+          Doces bons aproximam. A gente conecta os sabores do bairro
+          à sua mesa. Simples assim.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>A Doceria</h3>
+        <a href="#">Nossa história</a>
+        <a href="doces.html">Todos os sabores</a>
+        <a href="#">Trabalhe com a gente</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Conte com a gente</h3>
+        <a href="#">Central de ajuda</a>
+        <a href="pedidos.html">Acompanhar pedido</a>
+        <a href="#">Pagamentos</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bora crescer juntos</h3>
+        <a href="#">Cadastre sua doceria</a>
+        <a href="#">Seja entregador parceiro</a>
+        <a href="#">Portal do parceiro</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span>© 2026 Doceria do Exu.</span>
+      <span>Termos de uso · Privacidade · Cookies</span>
+      <span>Com sabor do bairro.</span>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>

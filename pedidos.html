@@ -1,0 +1,365 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus pedidos | Doceria do Exu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">
+      <span class="brand-logo">
+        <img src="Logo.png" alt="">
+      </span>
+      <span>Doceria do Exu</span>
+    </a>
+
+    <nav class="header-nav">
+      <div class="darkMode">
+        <p>Modo Escuro</p>
+        <label class="btnDark">
+          <input type="checkbox" id="btnDark">
+          <div class="bolinha"></div>
+        </label>
+      </div>
+      <a href="doces.html">Doces</a>
+      <a href="entrar.html">Entrar</a>
+      <a class="Sair">Sair</a>
+      <a class="bag-button" href="sacola.html">
+        <div class="img"></div>
+        Sacola · 0
+      </a>
+    </nav>
+  </header>
+
+  <div class="benefits">
+    <span>DOCE DE VERDADE</span>
+    <b>✦</b>
+    <span>OS QUERIDINHOS DO BAIRRO</span>
+    <b>✦</b>
+    <span>DA DOCERIA À SUA PORTA</span>
+    <b>✦</b>
+    <span>BORA ADOÇAR O DIA?</span>
+  </div>
+
+  <main class="orders-main container">
+    <p class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>›</span>
+      <strong>Meus pedidos</strong>
+    </p>
+
+    <h1>Meus pedidos</h1>
+    <p class="page-description">
+      Acompanhe o que está chegando e relembre suas últimas doçuras.
+    </p>
+
+    <nav class="filters">
+      <a class="active" href="#">Todos · 4</a>
+      <a href="#">Em andamento · 1</a>
+      <a href="#">Entregues · 2</a>
+      <a href="#">Cancelados · 1</a>
+    </nav>
+
+    <div class="orders-layout">
+      <section>
+        <div class="results-header">
+          <h2>Tá quase na sua porta.</h2>
+          <span>1 pedido em andamento</span>
+        </div>
+
+        <article class="current-order">
+          <header class="order-header">
+            <div>
+              <strong>Pedido #1048</strong>
+              <small>Hoje, 04 de novembro · 14:03</small>
+            </div>
+
+            <span class="status status-progress">● Saiu para entrega</span>
+          </header>
+
+          <div class="tracking">
+            <div class="delivery-time">
+              <span class="delivery-icon">→</span>
+
+              <p>
+                Previsão de chegada
+                <strong>14:35 – 14:45</strong>
+              </p>
+
+              <b>Tudo dentro do prazo</b>
+            </div>
+
+            <div class="tracking-steps">
+              <div class="tracking-step completed">
+                <span>✓</span>
+                <strong>Confirmado</strong>
+                <small>13:03</small>
+              </div>
+
+              <div class="tracking-step completed">
+                <span>✓</span>
+                <strong>Em preparo</strong>
+                <small>13:27</small>
+              </div>
+
+              <div class="tracking-step completed">
+                <span>→</span>
+                <strong>A caminho</strong>
+                <small>14:29</small>
+              </div>
+
+              <div class="tracking-step">
+                <span>⌂</span>
+                <strong>Entregue</strong>
+                <small>Até 14:45</small>
+              </div>
+            </div>
+
+            <p class="tracking-message">
+              Seus doces já estão com o entregador. Prepara a colher!
+            </p>
+          </div>
+
+          <div class="order-summary">
+            <div class="order-store">
+              <strong>Doceria do Exu</strong>
+              <small>3 itens</small>
+            </div>
+
+            <div class="order-item">
+              <img src="bolo com nozes.png" alt="Bolo de chocolate">
+
+              <span>
+                <strong>2 × Bolo de chocolate</strong>
+                <small>Massa, cobertura de chocolate e nozes</small>
+              </span>
+
+              <b>R$ 25,80</b>
+            </div>
+
+            <div class="order-item">
+              <img src="pudim2.png" alt="Pudim de leite">
+
+              <span>
+                <strong>1 × Pudim de leite</strong>
+                <small>Individual · calda de caramelo</small>
+              </span>
+
+              <b>R$ 9,90</b>
+            </div>
+
+            <div class="order-total">
+              <span>
+                Pago pelo Pix
+                <small>Itens R$ 35,70 + entrega R$ 5,90</small>
+              </span>
+
+              <strong>R$ 41,60</strong>
+            </div>
+
+            <div class="order-actions">
+              <button class="primary-action" type="button">
+                Acompanhar entrega
+              </button>
+
+              <button type="button">Falar com a doceria</button>
+
+              <a href="#">Ver comprovante</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="results-header history-title">
+          <h2>Suas últimas doçuras</h2>
+          <span>Últimos 3 meses</span>
+        </div>
+
+        <div class="order-history">
+          <article class="history-card">
+            <header>
+              <div>
+                <strong>Pedido #1031</strong>
+                <small>01 nov. 2026 · 19:32</small>
+              </div>
+              <span class="status status-delivered">● Entregue</span>
+            </header>
+
+            <div class="history-content">
+              <img src="bolo com nozes.png" alt="Pedido">
+
+              <span>
+                <strong>Doceria do Exu</strong>
+                <small>1 × Bolo de chocolate · 2 × Pudim de leite</small>
+                <b>R$ 38,60</b>
+              </span>
+
+              <a href="#">Ver detalhes ›</a>
+            </div>
+
+            <footer>
+              <button type="button">☆ Avaliar pedido</button>
+              <button type="button">Pedir de novo</button>
+            </footer>
+          </article>
+
+          <article class="history-card">
+            <header>
+              <div>
+                <strong>Pedido #0986</strong>
+                <small>25 out. 2026 · 15:18</small>
+              </div>
+              <span class="status status-delivered">● Entregue</span>
+            </header>
+
+            <div class="history-content">
+              <img src="cupcackes.png" alt="Pedido">
+
+              <span>
+                <strong>Doceria do Exu</strong>
+                <small>1 × Caixa de mini cupcakes · 8 unidades</small>
+                <b>R$ 42,90</b>
+              </span>
+
+              <a href="#">Ver detalhes ›</a>
+            </div>
+
+            <footer>
+              <span class="stars">★★★★★ Você avaliou</span>
+              <button type="button">Pedir de novo</button>
+            </footer>
+          </article>
+
+          <article class="history-card">
+            <header>
+              <div>
+                <strong>Pedido #0972</strong>
+                <small>21 out. 2026 · 19:04</small>
+              </div>
+              <span class="status status-cancelled">● Cancelado</span>
+            </header>
+
+            <div class="history-content">
+              <img src="pudim2.png" alt="Pedido">
+
+              <span>
+                <strong>Doceria do Exu</strong>
+                <small>2 × Pudim de leite · individual</small>
+                <b>R$ 25,70</b>
+              </span>
+
+              <a href="#">Ver detalhes ›</a>
+            </div>
+
+            <footer>
+              <span></span>
+              <button type="button">Pedir de novo</button>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <aside class="orders-sidebar">
+        <section class="sidebar-card">
+          <h3>Sua entrega de hoje</h3>
+
+          <p>
+            <strong>Casa</strong><br>
+            Rua dos Guris, 067 · Apto. 12<br>
+            Vila Mariana, São Paulo – SP
+          </p>
+
+          <hr>
+
+          <p>
+            <strong>Mariana Oliveira</strong><br>
+            (11) 98765-4321
+          </p>
+
+          <div class="delivery-code">
+            <span>
+              Código de entrega
+              <small>Informe só ao receber</small>
+            </span>
+
+            <strong>4821</strong>
+          </div>
+        </section>
+
+        <section class="sidebar-card">
+          <h3>Precisa? A gente ajuda.</h3>
+          <p>
+            Dúvidas sobre entrega, pagamento ou algum detalhe do pedido?
+          </p>
+          <button type="button">Acessar central de ajuda</button>
+        </section>
+
+        <section class="repeat-card">
+          <img src="bolo de cenoura.png" alt="Bolo de chocolate">
+
+          <div>
+            <small>SEMPRE CABE MAIS UM DOCE</small>
+            <h3>Deu vontade de repetir?</h3>
+            <p>
+              Seus favoritos e novos sabores do bairro estão esperando.
+            </p>
+            <a href="doces.html">Ver todos os doces →</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <span class="brand-logo">
+            <img src="Logo.png" alt="">
+          </span>
+          <span>Doceria do Exu</span>
+        </a>
+
+        <p>
+          Doces bons aproximam. A gente conecta os sabores do bairro
+          à sua mesa. Simples assim.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>A Doceria</h3>
+        <a href="#">Nossa história</a>
+        <a href="doces.html">Todos os sabores</a>
+        <a href="#">Trabalhe com a gente</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Conte com a gente</h3>
+        <a href="#">Central de ajuda</a>
+        <a href="pedidos.html">Acompanhar pedido</a>
+        <a href="#">Pagamentos</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Bora crescer juntos</h3>
+        <a href="#">Cadastre sua doceria</a>
+        <a href="#">Seja entregador parceiro</a>
+        <a href="#">Portal do parceiro</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span>© 2026 Doceria do Exu.</span>
+      <span>Termos de uso · Privacidade · Cookies</span>
+      <span>Com sabor do bairro.</span>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>
+
+

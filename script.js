@@ -541,34 +541,8 @@ function mascara_tel() {
   }
 }
 
+
 // 10. PÁGINA DE PERFIL DO USUÁRIO
-const containerPerfil = document.getElementById('conteudo-perfil');
-if (containerPerfil) {
-  const usuarioSalvo = JSON.parse(localStorage.getItem('clienteLogado'));
-
-  if (!usuarioSalvo) {
-    window.location.href = 'entrar.html';
-  } else {
-    document.getElementById('perfil-nome').value = usuarioSalvo.nome || '';
-    document.getElementById('perfil-sobrenome').value = usuarioSalvo.sobrenome || '';
-    document.getElementById('perfil-cpf').value = usuarioSalvo.cpf || 'Não informado';
-    document.getElementById('perfil-telefone').value = usuarioSalvo.telefone || '';
-    document.getElementById('perfil-email').value = usuarioSalvo.email || '';
-
-    const btnSairPerfil = document.getElementById('btn-sair-perfil');
-    if (btnSairPerfil) {
-      btnSairPerfil.addEventListener('click', function () {
-        localStorage.removeItem('clienteLogado');
-        window.location.href = 'entrar.html';
-      });
-    }
-  }
-}
-
-
-
-
-// 8. PÁGINA DE PERFIL DO USUÁRIO
 const containerPerfil = document.getElementById('conteudo-perfil');
 if (containerPerfil) {
   const usuarioSalvo = JSON.parse(localStorage.getItem('clienteLogado'));
@@ -592,10 +566,8 @@ if (containerPerfil) {
       document.getElementById('perfil-email').value = dados.email || '';
     }
 
-    // Preenche imediatamente com os dados da sessão
     preencherCamposPerfil(usuarioSalvo);
 
-    // Busca os dados atualizados direto do C# / MySQL (garante o CPF mesmo em sessões antigas)
     if (usuarioSalvo.id) {
       fetch(`${urlBase}/clientes/${usuarioSalvo.id}`)
         .then(res => res.ok ? res.json() : null)

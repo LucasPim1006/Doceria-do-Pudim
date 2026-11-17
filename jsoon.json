@@ -1,0 +1,18 @@
+{
+    "titulo": "Doces",
+    "itens": [
+      { "nome": "Bolo de chocolate", "preco": 12.90 },
+      { "nome": "Brigadeiro tradicional", "preco": 14.90 },
+      { "nome": "Mousse de maracujá", "preco": 10.90 },
+      { "nome": "Brownie de chocolate", "preco": 9.90 },
+      { "nome": "Pudim de leite", "preco": 9.90 },
+      { "nome": "Palha italiana clássica", "preco": 8.90 },
+      { "nome": "Bolo de cenoura", "preco": 11.90 },
+      { "nome": "Brigadeiro de leite Ninho", "preco": 16.90 },
+      { "nome": "Mousse de chocolate", "preco": 11.90 },
+      { "nome": "Brownie com doce de leite", "preco": 13.90 },
+      { "nome": "Pudim de coco", "preco": 11.90 },
+      { "nome": "Palha italiana de Ninho", "preco": 10.90 }
+    ]
+  }
+  

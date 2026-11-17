@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil | Doceria do Pudim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho padrão -->
+  <header class="header">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.png" alt="Logo Doceria do Pudim">
+      </div>
+      Doceria do Pudim
+    </a>
+
+    <nav class="header-nav">
+      <a href="doces.html">Doces</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="entrar.html">Entrar</a>
+      <a href="#" class="Sair" style="display: none;">Sair</a>
+      <a href="sacola.html" class="bag-button">
+        <div class="img"></div> Sacola · 0
+      </a>
+
+      <div class="darkMode">
+        <span>Modo Escuro</span>
+        <label class="btnDark">
+          <input type="checkbox" id="btnDark">
+          <span class="bolinha"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Faixa de benefícios -->
+  <div class="benefits">
+    <span>DOCE DE VERDADE</span>
+    <b>✦</b>
+    <span>OS QUERIDINHOS DO BAIRRO</span>
+    <b>✦</b>
+    <span>DA DOCERIA À SUA PORTA</span>
+    <b>✦</b>
+    <span>BORA ADOÇAR O DIA?</span>
+  </div>
+
+  <!-- Conteúdo Exclusivo do Perfil -->
+  <main class="container perfil-main">
+    <nav class="breadcrumb">
+      <a href="index.html">Início</a>
+      <span>›</span>
+      <strong>Meu perfil</strong>
+    </nav>
+
+    <div class="perfil-topo">
+      <div>
+        <span class="perfil-selo">CONTA DO CLIENTE</span>
+        <h1>Minhas Informações</h1>
+        <p>Gerencie seus dados pessoais cadastrados na Doceria do Pudim.</p>
+      </div>
+    </div>
+
+    <div class="perfil-grid" id="conteudo-perfil">
+      <!-- Coluna Esquerda: Cartão de Resumo do Cliente -->
+      <aside class="perfil-sidebar">
+        <div class="perfil-avatar" id="perfil-iniciais">DP</div>
+        <h2 class="perfil-nome-completo" id="perfil-titulo-nome">Carregando...</h2>
+        <span class="perfil-email-destaque" id="perfil-subtitulo-email">...</span>
+
+        <div class="perfil-status-badge">
+          <span class="ponto-verde"></span> Cliente ativo no bairro
+        </div>
+
+        <nav class="perfil-menu-lateral">
+          <a href="perfil.html" class="ativo">Dados pessoais</a>
+          <a href="pedidos.html">Histórico de pedidos</a>
+          <a href="doces.html">Explorar cardápio</a>
+        </nav>
+
+        <button type="button" id="btn-sair-perfil" class="perfil-btn-sair">
+          Sair da conta
+        </button>
+      </aside>
+
+      <!-- Coluna Direita: Cartão com Dados Detalhados -->
+      <section class="perfil-card">
+        <div class="perfil-card-header">
+          <div>
+            <h3>Dados cadastrais</h3>
+            <small>Informações vinculadas aos seus pedidos e entregas</small>
+          </div>
+          <span class="perfil-tag-seguro">Conta verificada</span>
+        </div>
+
+        <div class="perfil-dados-lista">
+          <div class="perfil-campo">
+            <label>Nome</label>
+            <input type="text" id="perfil-nome" readonly>
+          </div>
+
+          <div class="perfil-campo">
+            <label>Sobrenome</label>
+            <input type="text" id="perfil-sobrenome" readonly>
+          </div>
+
+          <div class="perfil-campo">
+            <label>CPF</label>
+            <input type="text" id="perfil-cpf" readonly>
+          </div>
+
+          <div class="perfil-campo">
+            <label>Telefone / WhatsApp</label>
+            <input type="text" id="perfil-telefone" readonly>
+          </div>
+
+          <div class="perfil-campo perfil-campo-largo">
+            <label>E-mail de acesso</label>
+            <input type="email" id="perfil-email" readonly>
+          </div>
+        </div>
+
+        <div class="perfil-rodape-acoes">
+          <span class="perfil-aviso">Para alterar seus dados cadastrais, entre em contato com o suporte ou atualize seu cadastro.</span>
+          <a href="pedidos.html" class="primary-button">Ver meus pedidos →</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-logo"><img src="Logo.png" alt="Logo"></div>
+            Doceria do Pudim
+          </a>
+          <p>Doces bons aproximam. A gente conecta os sabores do bairro à sua mesa. Simples assim.</p>
+        </div>
+        <div class="footer-column">
+          <h3>A Doceria</h3>
+          <a href="#">Nossa história</a>
+          <a href="doces.html">Todos os sabores</a>
+          <a href="#">Trabalhe com a gente</a>
+        </div>
+        <div class="footer-column">
+          <h3>Conte com a gente</h3>
+          <a href="#">Central de ajuda</a>
+          <a href="pedidos.html">Acompanhar pedido</a>
+          <a href="#">Pagamentos</a>
+        </div>
+        <div class="footer-column">
+          <h3>Bora crescer juntos</h3>
+          <a href="#">Cadastre sua doceria</a>
+          <a href="#">Seja entregador parceiro</a>
+          <a href="#">Portal do parceiro</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Doceria do Pudim. Termos de uso · Privacidade · Cookies</span>
+        <span>Com sabor do bairro.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

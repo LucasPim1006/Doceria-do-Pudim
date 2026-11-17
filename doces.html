@@ -4,35 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doces | Doceria do Exu</title>
+  <title>Doces | Doceria do Pudim</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <a class="brand" href="index.html">
-      <span class="brand-logo">
-        <img src="Logo.png" alt="">
-      </span>
-      <span>Doceria do Exu</span>
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.png" alt="Logo Doceria do Pudim">
+      </div>
+      Doceria do Pudim
     </a>
 
     <nav class="header-nav">
+      <a href="doces.html">Doces</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="entrar.html">Entrar</a>
+      <a href="#" class="Sair" style="display: none;">Sair</a>
+
+      <a href="sacola.html" class="bag-button">
+        <div class="img"></div> Sacola · 0
+      </a>
+
       <div class="darkMode">
-        <p>Modo Escuro</p>
+        Modo Escuro
         <label class="btnDark">
           <input type="checkbox" id="btnDark">
-          <div class="bolinha"></div>
+          <span class="bolinha"></span>
         </label>
       </div>
-      <a href="doces.html">Doces</a>
-      <a href="entrar.html">Entrar</a>
-      <a class="Sair">Sair</a>
-      <a class="bag-button" href="sacola.html">
-        <div class="img"></div>
-        Sacola · 0
-      </a>
     </nav>
   </header>
 
@@ -300,20 +302,7 @@
       </section>
 
       <aside class="catalog-sidebar">
-        <section class="sidebar-card">
-          <h3>
-            Sua sacola
-            <small>0 itens</small>
-          </h3>
-
-          <div class="empty-bag">
-            <img src="sacola1.png" alt="">
-            <strong>Tá faltando um docinho aqui.</strong>
-            <p>
-              Adicione seus favoritos e monte um pedido do seu jeitinho.
-            </p>
-          </div>
-        </section>
+        
 
         <section class="sidebar-card">
           <h3>Da cozinha à sua porta</h3>
@@ -321,15 +310,7 @@
           <p>Hoje, até as 22h</p>
           <p>Pix ou cartão no pedido</p>
         </section>
-
-        <section class="sidebar-card">
-          <h3>Ficou com alguma dúvida?</h3>
-          <p>
-            Para saber sobre ingredientes ou alergênicos,
-            fale com nossa cozinha.
-          </p>
-          <button type="button">Falar com a doceria</button>
-        </section>
+      
       </aside>
     </div>
   </main>
@@ -340,7 +321,7 @@
           <span class="brand-logo">
             <img src="Logo.png" alt="">
           </span>
-          <span>Doceria do Exu</span>
+          <span>Doceria do Pudim</span>
         </a>
 
         <p>
@@ -372,7 +353,7 @@
     </div>
 
     <div class="footer-bottom container">
-      <span>© 2026 Doceria do Exu.</span>
+      <span>© 2026 Doceria do Pudim.</span>
       <span>Termos de uso · Privacidade · Cookies</span>
       <span>Com sabor do bairro.</span>
     </div>
